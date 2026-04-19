@@ -1,0 +1,175 @@
+@font-face {
+    font-family: Sekuya;
+    src: url(/home/Yusuf/Fonts/Sekuya-Regular.ttf);
+}
+html {
+    font-family: Sekuya;
+    background-color: black;
+    color: white;
+}
+
+/*Header*/
+
+header {
+    display: flex;
+    justify-content: center;
+    margin: -8px -8px 0 -8px;
+    flex-wrap: wrap;
+}
+
+h1 {
+    position: relative;
+}
+
+h1:hover {
+    cursor: pointer;
+}
+
+h1:before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    width: 0px;
+    height: 3px;
+    background-color: white;
+    border-radius: 64px;
+    transition: ease-in 0.3s;
+}
+
+h1:hover:before {
+    width: 100%;
+}
+
+
+p {
+    position: relative;
+}
+
+p:hover {
+    cursor: pointer;
+}
+
+header p:before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    width: 0px;
+    height: 3px;
+    background-color: white;
+    border-radius: 64px;
+    transition: ease-in 0.3s;
+}
+
+header p:hover:before {
+    width: 100%;
+}
+
+/*Main*/
+
+main {
+    display: flex;
+    align-items: center;
+    margin: 0px -8px -8px -8px;
+    gap: 50vh;
+
+}
+
+#CounterText {
+    font-size: xx-large;
+    color:black;
+}
+
+#CounterDiv {
+    background-color: aliceblue;
+    border-radius: 8px;
+    transition: 0.5s;
+    width: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#CounterDiv:hover  {
+    box-shadow: 10px 10px rgb(206, 213, 219);
+}
+
+button {
+    border-radius: 4px;
+    padding: auto;
+    background-color: white;
+    transition: 0.5s;
+    width: 100px;
+    box-shadow: none;
+    border: 1px solid white;
+}
+
+button:hover {
+    box-shadow: 3px 3px rgb(220, 220, 220);
+}
+
+#ButtonsDiv {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    gap: 10vh;
+}
+
+/*Footer*/
+
+footer {
+    margin: 32px -8px -8px -8px;
+    border-radius: 8px;
+    padding: 10px;
+    width: 100vh;
+    background-color: rgba(255, 209, 220);
+    transition: 0.5s;
+}
+
+footer:hover {
+    box-shadow:10px 10px rgb(222, 182, 191);
+}
+
+#YouTubeLink {
+    color: white;
+    position: relative;
+    text-decoration: none;
+}
+
+#YouTubeLink:before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    height: 3px;
+    width: 0px;
+    border-radius: 64px;
+    transition: 0.3s ease;
+    background-color: white;
+}
+
+#YouTubeLink:hover:before {
+    width: 100%;
+}
+
+#YouTubeLink:hover{
+    color:red;
+    transition: 0.4s;
+}
+
+
+#Socials:hover {
+    cursor: pointer;
+}
+
+@media (max-width:600px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        gap:50px;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+}
